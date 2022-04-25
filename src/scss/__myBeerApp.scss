@@ -1,0 +1,151 @@
+.menu_App_left{
+    max-width: 25%;
+    min-width: 25%;
+    min-height: 200px;
+    border-right: 0.75px solid grey;
+    border-top: 0.75px solid grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menu_App_left h1{
+    font-family: $font-base bold;
+    font-size: 30px;
+    color: rgb(0, 156, 26);
+    padding: 50px 0px;
+    cursor: pointer;
+}
+.menu_App_item{
+    font-family: $font-base bold;
+    font-size: 40px;
+    color: grey;
+    padding: 20px 50px;
+    cursor: pointer;
+}
+.menu_App_item:hover{
+    color: rgb(0, 156, 26);
+    transition: 1.5s;
+}
+.addBeerBtn{
+    width: 60%;
+    height: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: none;
+    background: grey;
+    color:white;
+    cursor: pointer;
+}
+.addBeerBtn:hover{
+    border: 5px solid rgb(0, 156, 26);
+    transition: 1.5s;
+}
+.myBeerContent{
+    width: 100%;
+    display: flex;
+    
+}
+.addBeerForm{
+    width: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: inherit;
+    background-position-y: -100px;
+    background-position-x: 20px;
+   
+}
+.addBeerForm form{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    color: darkslategray;
+    text-align: left;
+}
+.addBeerForm label{
+    padding-top: 10px;
+}
+.addBeerForm input{
+    border: none;
+    border-bottom: 00.75px solid rgb(0, 156, 26);
+}
+.addBeerForm select{
+    border: none;
+    border-bottom: 00.75px solid rgb(0, 156, 26);
+    color: grey;
+
+}
+.sendBtn{
+    height: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none;
+    background: grey;
+    color:white;
+    cursor: pointer;
+}
+.sendBtn:hover{
+    border: 5px solid rgb(0, 156, 26);
+    transition: 1.5s;
+}
+.beerListContainer{
+    display: none;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    padding: 150px 0px;
+    font-family: $font-base bold;
+    font-size: 18px; 
+    background-color: rgb(198, 192, 192);
+}
+.beerList{
+    color: grey;
+    max-height: 600px;
+    overflow-x: overlay;
+    min-width: 700px;
+    background-color: white;
+    
+}
+.beerList::-webkit-scrollbar {
+    background: white;
+}
+.beerList::-webkit-scrollbar-thumb{
+    background: rgb(0, 156, 26);
+}
+.beerListItem{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.beerListItem:hover{
+    color: rgb(0, 156, 26);
+    transition: 1.5s;
+}
+.welcomePageContainer{
+    display: flex;
+}
+.welcomePageImg{
+    width: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: center;
+
+}
+.welcomePageText{
+    width: 50%;
+    text-align: center;
+    padding-top: 160px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: grey;
+    font-family: $font-base bold;
+    font-size: 30px;
+}
+.beerImage{
+    width: 300px;
+    height: 400px;
+}

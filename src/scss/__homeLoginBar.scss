@@ -1,0 +1,23 @@
+#loginBar{
+    background: white;
+    border-bottom: 0.75px solid grey;
+}
+.loginBar_container{
+    display: flex;
+    padding: 20px 90px;
+    gap: 20px;
+    justify-content: flex-end;
+}
+.loginBar_container h2:hover{
+    color: rgb(0, 156, 26);
+    transition: 1.5s;
+    }
+.loginBar_item a{
+    color: grey;
+    text-decoration: none;
+    font-family: $font-base bold;
+}
+.loginBar_item a:hover{
+    color: rgb(0, 156, 26);
+    transition: 1.5s;
+  }

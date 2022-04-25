@@ -1,0 +1,28 @@
+#menu{
+    width: 100%;
+    border-top: 0.75px solid grey;
+}    
+.menu_container{
+    display: flex;
+    justify-content: center;
+    padding: 20px 100px;
+    background-color: white;
+    gap: 50px;
+}
+.menuAbout_container{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 100px;
+    background-color: white;
+    margin-bottom: 90px;
+}
+.menu_item a{
+    color: grey;
+    font-family: $font-base bold;
+    text-decoration: none;
+}
+.menu_item a:hover{
+    color: rgb(0, 156, 26);
+    transition: 1s;
+    cursor: pointer;
+}

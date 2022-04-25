@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import {BrowserRouter as Router,Route,Switch} from 'react-router-dom';
+import Home from "./components/home";
+import Login from "./components/login";
+import Registration from "./components/registration";
+import Logout from "./components/logout";
+import "./scss/main.scss"
+import {AuthProvider} from "./contexts/AuthContext";
+import MyBeerApp from "./components/myBeerApp";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+const App=()=>{
+  return(   
+    <AuthProvider>
+    <Router>
+      <Switch>
+        <Route exact path ='/' component={Home}/>
+        <Route path ='/login' component={Login}/>
+        <Route path ='/registration' component={Registration}/>
+        <Route path ='/logout' component={Logout}/>
+        <Route path ='/myBeerApp' component={MyBeerApp}/>
+      </Switch>
+    </Router>    
+    </AuthProvider> 
+  )
 }
 
 export default App;

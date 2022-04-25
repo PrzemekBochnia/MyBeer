@@ -1,0 +1,65 @@
+.header{
+    background: white;
+}
+.header__container{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+  }
+  .logo{
+    font-family:'Mr Dafoe', cursive;;
+    color: grey;
+    padding: 20px 50px;
+    font-size:80px;
+  }
+  
+.logo span{
+    color: rgb(0, 156, 26);
+    padding-left: 10px;
+    font-size: 100px;    
+  }
+  .header__nav{
+    display: flex;
+    padding: 0 50px;
+  }
+ 
+.header .nav__element{
+    padding: 0 20px;
+    list-style: none;
+  }    
+
+.header .nav__link{
+    color: gray;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: $font-base bold;
+    font-size: 20px; 
+}
+.linkToApp{
+    color: rgb(0, 156, 26);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: $font-base bold;
+    font-size: 20px; 
+}
+.linkToApp:hover{
+  color: grey;
+  transition: 1.5s;
+}
+.header .nav__link:hover{
+    color: rgb(0, 156, 26);
+    transition: 1.5s;
+  }
+h1.logo_styles a{
+    color: grey;
+    text-decoration: none;
+    font-family: $font-base bold;
+  }
+h1.logo_styles a:hover{
+    color: white;
+    transition: 1.5s;
+    font-size: 17px;
+};
+

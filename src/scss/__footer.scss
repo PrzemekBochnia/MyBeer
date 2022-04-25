@@ -1,0 +1,21 @@
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+    border-top: 0.75px solid grey;
+}
+.footer_container h1{
+    font-size: 30px;
+    font-family: 'Mr Dafoe', cursive;
+    color: grey;
+    padding: 0 100px;
+    border: none;
+}
+.footer_container span{
+    color: rgb(0, 156, 26);
+    font-size: 40px;
+}
+.footerImg{
+   padding-right: 100px;
+
+}
